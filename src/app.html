@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="%lang%">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="apple-mobile-web-app-title" content="PP" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script>
+			// Prevent flash of unstyled content (FOUC) by setting initial mode
+			(function () {
+				const rootEl = document.documentElement;
+				const mode = localStorage.getItem('mode-watcher-mode') || 'dark';
+				const light =
+					mode === 'light' ||
+					(mode === 'system' && window.matchMedia('(prefers-color-scheme: light)').matches);
+
+				if (light) {
+					rootEl.classList.remove('dark');
+				} else {
+					rootEl.classList.add('dark');
+				}
+
+				rootEl.style.colorScheme = light ? 'light' : 'dark';
+			})();
+		</script>
+		<script
+			async
+			defer
+			src="https://umami.example.com/script.js"
+			data-website-id="placeholder"
+		></script>
+
+		<style>
+			body {
+				font-family: 'Ubuntu', sans-serif;
+			}
+		</style>
+		%sveltekit.head%
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
+</html>

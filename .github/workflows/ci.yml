@@ -1,0 +1,96 @@
+name: CI
+
+on:
+  push:
+    branches: [main, staging]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      UMAMI_USERNAME: ${{ secrets.UMAMI_USERNAME }}
+      UMAMI_PASSWORD: ${{ secrets.UMAMI_PASSWORD }}
+      UMAMI_BASE_URL: ${{ secrets.UMAMI_BASE_URL }}
+
+    steps:
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 🔧 Set up Bun
+        uses: oven-sh/setup-bun@v1
+
+      - name: 📦 Install dependencies
+        run: bun install
+
+      # 1. Get deployment domain from wrangler.jsonc
+      - name: 🧠 Extract deployment domain
+        id: zone
+        run: |
+          domain=$(bun script/get-domain.ts)
+          echo "zone=$domain" >> "$GITHUB_OUTPUT"
+          echo "📡 Domain to track: $domain"
+
+      # 2. Authenticate with Umami
+      - name: 🔐 Authenticate with Umami
+        id: umami_auth
+        run: |
+          response=$(curl -s -X POST "$UMAMI_BASE_URL/api/auth/login" \
+            -H "Content-Type: application/json" \
+            -d "{\"username\":\"$UMAMI_USERNAME\",\"password\":\"$UMAMI_PASSWORD\"}")
+          token=$(echo "$response" | jq -r .token)
+          echo "token=$token" >> "$GITHUB_OUTPUT"
+          echo "🔑 Got token for Umami"
+
+      # 3. Check if website exists or create it
+      - name: 🔍 Lookup or create site in Umami
+        id: umami_check
+        run: |
+          domain="${{ steps.zone.outputs.zone }}"
+          token="${{ steps.umami_auth.outputs.token }}"
+
+          site=$(curl -s -H "Authorization: Bearer $token" "$UMAMI_BASE_URL/api/websites")
+
+          if echo "$site" | jq empty 2>/dev/null; then
+            match=$(echo "$site" | jq -r --arg domain "$domain" '.data[] | select(.domain==$domain) | .id')
+          else
+            echo "❌ Invalid JSON from Umami:"
+            echo "$site"
+            exit 1
+          fi
+
+          if [ -n "$match" ]; then
+            echo "✅ Site already exists: $domain"
+            id="$match"
+          else
+            echo "🆕 Creating new site: $domain"
+            id=$(curl -s -X POST "$UMAMI_BASE_URL/api/websites" \
+              -H "Authorization: Bearer $token" \
+              -H "Content-Type: application/json" \
+              -d "{\"name\":\"$domain\",\"domain\":\"$domain\"}" | jq -r .id)
+          fi
+
+          echo "website_id=$id" >> "$GITHUB_OUTPUT"
+          echo "🔗 Umami site ID: $id"
+
+      # 4. Inject Umami script into app.html
+      - name: ✍️ Inject Umami script
+        run: |
+          sed -i "s|src=\".*umami.*script.js\"|src=\"${UMAMI_BASE_URL}/script.js\"|" src/app.html
+          sed -i "s/data-website-id=\"placeholder\"/data-website-id=\"${{ steps.umami_check.outputs.website_id }}\"/" src/app.html
+          echo "📥 Injected Umami website ID into app.html"
+
+      # 5. Deploy
+      - name: 🚀 Deploy to production
+        if: github.ref == 'refs/heads/main'
+        run: bun run deploy
+
+      - name: 🚀 Deploy to staging
+        if: github.ref == 'refs/heads/staging'
+        run: bun run deploy --env staging

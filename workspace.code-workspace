@@ -1,0 +1,14 @@
+{
+	"folders": [{ "path": "." }],
+	"settings": {
+		"files.associations": {
+			"wrangler.json": "jsonc"
+		},
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"eslint.validate": ["javascript", "javascriptreact", "typescript", "svelte"],
+		"tailwindCSS.includeLanguages": {
+			"svelte": "html"
+		}
+	}
+}
