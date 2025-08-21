@@ -6,11 +6,10 @@ import { defineConfig } from 'vite';
 export default defineConfig({
 	plugins: [
 		paraglideVitePlugin({
-			 project: './project.inlang', 
+			project: './project.inlang',
 			outdir: './src/lib/paraglide',
-			 disableAsyncLocalStorage: true, 
-			 
-			 urlPatterns: [
+			disableAsyncLocalStorage: true,
+			urlPatterns: [
 				{
 					pattern: "/impressum",
 					localized: [
@@ -24,9 +23,10 @@ export default defineConfig({
 						['en', "/privacy-policy"],
 						['de', "/datenschutz"]
 					]
-				},
-			 ]
-			}),
-		tailwindcss(), sveltekit()],
-	
+				}
+			]
+		}),
+		tailwindcss(),
+		sveltekit()
+	],
 });
