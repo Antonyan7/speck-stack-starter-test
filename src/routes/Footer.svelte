@@ -13,7 +13,7 @@
 		playsinline
 		class="absolute inset-0 w-full h-full object-cover rounded-t-[25px] md:rounded-t-[15px] lg:rounded-t-[15px] z-10"
 	>
-		<source src="/Chetra - Hero Video (Adjusted)-1.mp4" type="video/mp4" />
+		<source src="/videos/hero.mp4" type="video/mp4" />
 	</video>
 	<div class="absolute inset-0 bg-[#06121a]/70 rounded-t-[25px] md:rounded-t-[15px] lg:rounded-t-[15px]"></div>
 

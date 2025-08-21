@@ -5,87 +5,62 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4e2b0c7-ae0d-4e3b-9977-e2a14e9d73be" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/ContactCta.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/ExperienceBox.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/FAQItem.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/Logo.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/LogosContainer.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/PartnersIcons.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/ServiceCard.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/TeamCard.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/icons/BracesIcon.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/icons/GlobeIcon.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/icons/LinkedInIcon.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/logos/ALogo.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/logos/AwsLogo.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/logos/CSharpLogo.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/logos/ClerkLargeLogo.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/logos/ClerkLogo.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/logos/CloudflareLogo.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/logos/CppLogo.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/logos/CssLogo.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/logos/DockerLogo.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/logos/ElephantLogo.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/logos/GOLogo.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/logos/GoogleCloudLogo.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/logos/GoogleCloudNewLogo.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/logos/GoogleWorkspace.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/logos/Html5Logo.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/logos/Html5NewLogo.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/logos/JSLogo.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/logos/JavaLogo.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/logos/MariaDBLogo.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/logos/MongoDBLogo.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/logos/MySqlLogo.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/logos/MySqlNewLogo.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/logos/NextLogo.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/logos/NuxtLogo.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/logos/RLogo.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/logos/ReactLogo.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/logos/ShadcnLogo.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/logos/SupabaseLogo.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/logos/SvelteLogo.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/logos/TSLogoLarge.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/logos/TailwindLogo.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/logos/TypeScriptLogo.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/logos/UnknownLogo.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/logos/VueLogo.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/logos/WordPressLogo.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/sections/FAQSection.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/sections/OurExperienceSection.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/sections/ServicesSection.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/sections/StackSection.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/sections/WhoAreWeSection.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/stores/ui.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Chetra - Hero Video (Adjusted)-1.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Nick.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Yanic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/grid.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/navbar-background.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bun.lock" beforeDir="false" afterPath="$PROJECT_DIR$/bun.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/components/HeroItemCarousel.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/HeroItemCarousel.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/Footer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Footer.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/Header.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Header.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Chetra - Hero Video (Adjusted)-1.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/static/videos/hero.mp4" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/davitgalstyan/Desktop/speck-stack-starter/node_modules/typescript/lib&quot;
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="31bblwSAdhGge9Uy5X4YJzkq3bb" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.build.executor": "Run",
+    "npm.dev.executor": "Run",
+    "ts.external.directory.path": "/Users/davitgalstyan/Desktop/speck-stack-starter/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/videos" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.build">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -98,12 +73,32 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.18034.50" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d4e2b0c7-ae0d-4e3b-9977-e2a14e9d73be" name="Changes" comment="" />
+      <created>1755795873326</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1755795873326</updated>
+      <workItem from="1755795874649" duration="2666000" />
+    </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LAST_COMMIT_MESSAGE" value="" />

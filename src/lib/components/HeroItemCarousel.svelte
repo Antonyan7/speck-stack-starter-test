@@ -12,7 +12,7 @@ import { mobileMenuOpen } from '$lib/stores/ui.js';
 		playsinline
 		class="absolute inset-0 w-full h-full object-cover rounded-b-[25px] md:rounded-b-[36.71px] lg:rounded-b-[50px] z-10"
 	>
-		<source src="/Chetra - Hero Video (Adjusted)-1.mp4" type="video/mp4" />
+		<source src="/videos/hero.mp4" type="video/mp4" />
 	</video>
 	<div class="absolute inset-0 bg-[#06121a]/70 rounded-b-[25px] md:rounded-b-[36.71px] lg:rounded-b-[50px]"></div>
 
