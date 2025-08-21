@@ -2,9 +2,13 @@
 
 @import 'tw-animate-css';
 
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200..700&display=swap');
+
+
 @custom-variant dark (&:is(.dark *));
 
 :root {
+	--font-readex: 'Readex Pro', sans-serif;
 	--background: oklch(0.9821 0 0);
 	--foreground: oklch(0.2435 0 0);
 	--card: oklch(0.9911 0 0);
@@ -57,6 +61,11 @@
 	--tracking-normal: 0em;
 	--spacing: 0.25rem;
 }
+
+html, body {
+	font-family: var(--font-readex);
+}
+
 
 .dark {
 	--background: oklch(0.1776 0 0);
@@ -204,4 +213,10 @@
 
 .container a:hover {
 	text-decoration: none;
+}
+
+
+:focus-visible {
+	outline: none;
+	box-shadow: 0 0 0 2px color-mix(in oklab, var(--ring) 60%, transparent);
 }
