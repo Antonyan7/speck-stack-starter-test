@@ -5,5 +5,11 @@
   ],
   "routes": [
     { "src": "/(.*)", "dest": "/" }
-  ]
+  ],
+  "build": {
+    "env": {
+      "VERCEL_ENV": "production"
+    }
+  },
+  "outputDirectory": "build"
 }
